@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
                 imageView.getLocationOnScreen(locs);
                 int imageHeight = imageView.getHeight();
                 int anchorHeight = locs[1];
-                int screenHeight = UIUtil.getScreenSize(MainActivity.this)[1];
+                int screenHeight = UIUtil.getScreenRealHeight(MainActivity.this);
                 int dialogHeight = dialog.getHeight();
                 int bottomHeight = UIUtil.getBottomBarHeight();
                 int statusHeight = UIUtil.getStatusHeight(MainActivity.this);
